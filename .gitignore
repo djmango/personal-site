@@ -127,3 +127,4 @@ build
 
 .vscode
 migrations
+.pytest_cache
