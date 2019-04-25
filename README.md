@@ -8,6 +8,7 @@ my 2019 personal website, built with flask (yay micro-frameworks) and some other
 ===============================
 personal-website
 ===============================
+[![Build Status](https://travis-ci.org/djmango/personal-site.svg?branch=master)](https://travis-ci.org/djmango/personal-site)
 
 A flasky app.
 
