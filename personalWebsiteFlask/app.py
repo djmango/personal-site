@@ -2,8 +2,9 @@
 """The app module, containing the app factory function."""
 from flask import Flask, render_template
 
-from personalWebsiteFlask import commands, public, user, settings
-from personalWebsiteFlask.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate, webpack
+from personalWebsiteFlask import commands, public, settings, user
+from personalWebsiteFlask.extensions import (bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate,
+                                             webpack)
 
 
 def create_app(config_object=settings):
