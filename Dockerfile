@@ -6,16 +6,13 @@ LABEL maintainer='djmango'
 RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev npm webpack
 
-ADD ./requirements/prod.txt /app/requirements.txt
-
-WORKDIR /app
+ADD ./requirements/prod.txt /requirements.txt
 
 # get python packages
 RUN pip3 install -r requirements.txt
 
 # get app and public env file
-ADD . /app
-ADD pub.env /app
+COPY . /
 
 # set envs
 ENV LC_ALL=C.UTF-8
@@ -34,4 +31,4 @@ RUN flask db init && \
 
 # prepare for run
 EXPOSE 5000
-ENTRYPOINT gunicorn personalWebsiteFlask.app:create_app\(\) -b 0.0.0.0:$PORT -w 3
+ENTRYPOINT gunicorn personalWebsiteFlask.app:create_app\(\) -b 0.0.0.0:5000 -w 3

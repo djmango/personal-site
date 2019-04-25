@@ -2,11 +2,11 @@
 """The app module, containing the app factory function."""
 from flask import Flask, render_template
 
-from personalWebsiteFlask import commands, public, user
+from personalWebsiteFlask import commands, public, user, settings
 from personalWebsiteFlask.extensions import bcrypt, cache, csrf_protect, db, debug_toolbar, login_manager, migrate, webpack
 
 
-def create_app(config_object='personalWebsiteFlask.settings'):
+def create_app(config_object=settings):
     """An application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.
