@@ -1,18 +1,13 @@
 # personal-site
 
-my 2019 personal website, built with flask (yay micro-frameworks) and some other stuff ill decide on later
+[![Build Status](https://travis-ci.org/djmango/personal-site.svg?branch=master)](https://travis-ci.org/djmango/personal-site)
+[![Known Vulnerabilities](https://snyk.io/test/github/djmango/personal-site/badge.svg)](https://snyk.io/test/github/djmango/personal-site) 
 
+my 2019 personal website, built with flask (yay micro-frameworks) and some other stuff ill decide on later
 
 *~ Sulaiman Ghori*
 
-===============================
-personal-website
-===============================
-[![Build Status](https://travis-ci.org/djmango/personal-site.svg?branch=master)](https://travis-ci.org/djmango/personal-site)
-
-A flasky app.
-
-
+---
 Quickstart
 ----------
 
@@ -28,7 +23,7 @@ Run the following commands to bootstrap your environment ::
 You will see a pretty welcome screen.
 
 Once you have installed your DBMS, run the following to create your app's
-database tables and perform the initial migration ::
+database tables and perform the initial migration
 
     flask db init
     flask db migrate
@@ -39,7 +34,7 @@ database tables and perform the initial migration ::
 Deployment
 ----------
 
-To deploy::
+To deploy
 
     export FLASK_ENV=production
     export FLASK_DEBUG=0
@@ -54,7 +49,7 @@ variable is unset or is set to ``0``.
 Shell
 -----
 
-To open the interactive shell, run ::
+To open the interactive shell, run
 
     flask shell
 
@@ -64,7 +59,7 @@ By default, you will have access to the flask ``app``.
 Running Tests
 -------------
 
-To run all tests, run ::
+To run all tests, run
 
     flask test
 
@@ -72,11 +67,11 @@ To run all tests, run ::
 Migrations
 ----------
 
-Whenever a database migration needs to be made. Run the following commands ::
+Whenever a database migration needs to be made. Run the following commands
 
     flask db migrate
 
-This will generate a new migration script. Then run ::
+This will generate a new migration script. Then run
 
     flask db upgrade
 
