@@ -20,7 +20,7 @@ before_script:
   - flask lint
 
 script:
-  - pytest --cov=personalWebsiteFlask tests/
+  - py.test --cov-report=xml --cov=personalWebsiteFlask tests/
 
 after_success:
   - codecov
