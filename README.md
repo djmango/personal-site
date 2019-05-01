@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/djmango/personal-site.svg?branch=master)](https://travis-ci.org/djmango/personal-site)
 [![Known Vulnerabilities](https://snyk.io/test/github/djmango/personal-site/badge.svg)](https://snyk.io/test/github/djmango/personal-site) 
+[![codecov](https://codecov.io/gh/djmango/personal-site/branch/master/graph/badge.svg)](https://codecov.io/gh/djmango/personal-site)
+
 
 my 2019 personal website, built with flask (yay micro-frameworks) and some other stuff ill decide on later
 

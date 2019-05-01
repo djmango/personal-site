@@ -3,6 +3,7 @@
 
 # Testing
 pytest==3.7.4
+codecov==2.0.15
 pytest-cov==2.6.1
 WebTest==2.0.30
 factory-boy==2.11.1
