@@ -18,7 +18,6 @@ Run the following commands to bootstrap your environment ::
     git clone https://github.com/djmango/personal-website
     cd personalWebsiteFlask
     pip install -r requirements/dev.txt
-    cp .env.example .env
     npm install
     npm start  # run the webpack dev server and flask server using concurrently
 
