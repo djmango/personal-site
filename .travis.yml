@@ -20,7 +20,7 @@ before_script:
   - npm run build
 
 script:
-  - py.test --cov-report=xml --cov=app/personalWebsiteFlask app/tests/
+  - py.test --cov-report=xml --cov=personalWebsiteFlask tests/
 
 after_success:
   - codecov
