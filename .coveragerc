@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = personalWebsiteFlask/
+source = app/personalWebsiteFlask/
 
 [report]
 exclude_lines =
@@ -10,7 +10,7 @@ exclude_lines =
     if __name__ == .__main__.:
 ignore_errors = True
 omit =
-    tests/*
-    assets/*
-    node_modules/*
-    personalWebsiteFlask/commands.py
+    app/tests/*
+    app/assets/*
+    app/node_modules/*
+    app/personalWebsiteFlask/commands.py
