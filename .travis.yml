@@ -2,6 +2,7 @@
 sudo: false
 
 language: python
+cache: pip
 
 env:
 - FLASK_APP=autoapp.py FLASK_DEBUG=1 FLASK_ENV=development DATABASE_URL="sqlite:////tmp/dev.db"
@@ -19,7 +20,7 @@ before_script:
   - npm run build
 
 script:
-  - py.test --cov-report=xml --cov=personalWebsiteFlask tests/
+  - py.test --cov-report=xml --cov=app/personalWebsiteFlask app/tests/
 
 after_success:
   - codecov
