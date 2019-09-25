@@ -1,1 +1,1 @@
-docker run --env-file sec.env -p 8080:5000 personal-site
+docker run --env-file sec.env -p 5000:5000 -v assets:/app/assets personal-site
