@@ -7,7 +7,7 @@
 
 my 2019 personal website, built with flask (yay micro-frameworks) and some other stuff ill decide on later
 
-*~ Sulaiman Ghori*
+~ Sulaiman Ghori
 
 ---
 Quickstart

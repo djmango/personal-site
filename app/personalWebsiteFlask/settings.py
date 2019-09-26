@@ -19,7 +19,7 @@ load_dotenv(d.joinpath('sec.env'))
 
 ENV = getenv('FLASK_ENV', default='production')
 DEBUG = ENV == 'development'
-SQLALCHEMY_DATABASE_URI = getenv('DATABASE_URL', default='sqlite://')
+SQLALCHEMY_DATABASE_URI = getenv('DATABASE_URL', default='sqlite:////tmp/test.db')
 SECRET_KEY = getenv('SECRET_KEY', default='not-so-secret')
 BCRYPT_LOG_ROUNDS = getenv('BCRYPT_LOG_ROUNDS', default=13)
 DEBUG_TB_ENABLED = DEBUG

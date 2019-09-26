@@ -5,8 +5,8 @@ LABEL maintainer='djmango'
 WORKDIR  /app
 
 # get app and public export file
+COPY assets/ ./assets/
 COPY requirements/ ./requirements/
-VOLUME [ "./assets/:/app/assets/" ]
 COPY app.py ./
 COPY personalWebsiteFlask/ ./personalWebsiteFlask/
 COPY *.env ./
@@ -18,7 +18,7 @@ RUN pip --no-cache install -r requirements/prod.txt
 RUN export FLASK_export="production" && \
     export FLASK_DEBUG="0" && \
     export FLASK_APP="app.py" && \
-    export DATABASE_URL="sqlite://"
+    export DATABASE_URL="sqlite:////tmp/test.db"
 
 # initialize and build
 RUN flask db init && \
